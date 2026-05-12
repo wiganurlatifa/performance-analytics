@@ -1,0 +1,1537 @@
+{
+  "version": "1.2.0",
+  "settings": {
+    "school_name": "Testing",
+    "year": 2026,
+    "admin_password": "adminkko"
+  },
+  "dashboard_config": {
+    "hero_title": "Testing",
+    "hero_subtitle": "Testing",
+    "hero_badge": "XXX",
+    "theme": "blue",
+    "show_hero": true,
+    "show_stats": true,
+    "show_chart": false,
+    "show_top10": false,
+    "show_cabor": true,
+    "show_action_buttons": true
+  },
+  "report_config": {
+    "kop_line1": "PEMERINTAH KABUPATEN CILACAP",
+    "kop_line2": "DINAS PENDIDIKAN DAN KEBUDAYAAN",
+    "kop_line3": "SMA NEGERI 1 KROYA",
+    "kop_address": "Jl. Pramuka No. 1, Kroya, Kabupaten Cilacap, Jawa Tengah",
+    "kop_contact": "Telp. (0282) 000000 · Email: info@sman1kroya.sch.id · Website: sman1kroya.sch.id",
+    "kop_logo_url": "",
+    "report_title": "LAPORAN HASIL SELEKSI KELAS KHUSUS OLAHRAGA (KKO)",
+    "report_subtitle": "Peringkat Peserta Berdasarkan Nilai Akhir",
+    "ttd_kota": "Cilacap",
+    "ttd_jabatan": "Kepala SMA Negeri 1 Kroya",
+    "ttd_nama": "(...................................)",
+    "ttd_nip": "NIP. ........................",
+    "show_kop": true,
+    "show_logo": true,
+    "show_signature": true,
+    "show_summary": true
+  },
+  "menu": [
+    {
+      "key": "dashboard",
+      "label": "Dashboard",
+      "visible": true
+    },
+    {
+      "key": "athletes",
+      "label": "Peserta",
+      "visible": false
+    },
+    {
+      "key": "physical",
+      "label": "Tes Fisik",
+      "visible": false
+    },
+    {
+      "key": "psychological",
+      "label": "Tes Psikologi",
+      "visible": false
+    },
+    {
+      "key": "skill",
+      "label": "Tes Keterampilan",
+      "visible": false
+    },
+    {
+      "key": "weights",
+      "label": "Konfigurasi Bobot",
+      "visible": false
+    },
+    {
+      "key": "ranking",
+      "label": "Ranking",
+      "visible": true
+    },
+    {
+      "key": "analytics",
+      "label": "Analytics",
+      "visible": true
+    },
+    {
+      "key": "compare",
+      "label": "Compare",
+      "visible": false
+    },
+    {
+      "key": "exportp",
+      "label": "Export",
+      "visible": false
+    },
+    {
+      "key": "admin",
+      "label": "Pengaturan",
+      "visible": true,
+      "adminOnly": true
+    }
+  ],
+  "cabor": [
+    {
+      "name": "Atletik (PA)",
+      "category": "Individual"
+    },
+    {
+      "name": "Atletik (PI)",
+      "category": "Individual"
+    },
+    {
+      "name": "Bola Voli (PA)",
+      "category": "Team"
+    },
+    {
+      "name": "Bola Voli (PI)",
+      "category": "Team"
+    },
+    {
+      "name": "Bulutangkis",
+      "category": "Racquet"
+    },
+    {
+      "name": "Panahan",
+      "category": "Individual"
+    },
+    {
+      "name": "Pencak Silat",
+      "category": "Combat"
+    },
+    {
+      "name": "Renang",
+      "category": "Individual"
+    },
+    {
+      "name": "Sepak Bola",
+      "category": "Team"
+    },
+    {
+      "name": "Taekwondo",
+      "category": "Combat"
+    }
+  ],
+  "physical_fields_by_cabor": {
+    "Sepak Bola": [
+      {
+        "key": "tinggi_badan",
+        "label": "Tinggi Badan",
+        "unit": "M",
+        "descriptive": true
+      },
+      {
+        "key": "berat_badan",
+        "label": "Berat Badan",
+        "unit": "Kg",
+        "descriptive": true
+      },
+      {
+        "key": "tinggi_duduk",
+        "label": "Tinggi Duduk",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "panjang_tungkai",
+        "label": "Panjang Tungkai",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "rentang_lengan",
+        "label": "Panjang Rentang Lengan",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "sit_reach",
+        "label": "Sit and Reach",
+        "unit": "Cm",
+        "tiersKey": "sit_reach"
+      },
+      {
+        "key": "jump_hop_kanan",
+        "label": "3 Jump HOP (Kanan)",
+        "unit": "Cm",
+        "tiersKey": "jump_hop_3x"
+      },
+      {
+        "key": "jump_hop_kiri",
+        "label": "3 Jump HOP (Kiri)",
+        "unit": "Cm",
+        "tiersKey": "jump_hop_3x"
+      },
+      {
+        "key": "squat_kanan",
+        "label": "Single Leg Squat (Kanan)",
+        "unit": "Kali",
+        "tiersKey": "squat_leg"
+      },
+      {
+        "key": "squat_kiri",
+        "label": "Single Leg Squat (Kiri)",
+        "unit": "Kali",
+        "tiersKey": "squat_leg"
+      },
+      {
+        "key": "core_strength",
+        "label": "Core Muscle Strength",
+        "unit": "Kali",
+        "tiersKey": "core_strength"
+      },
+      {
+        "key": "arrow_head_kanan",
+        "label": "Arrow Head (Kanan)",
+        "unit": "Sec",
+        "lowerBetter": true,
+        "tiersKey": "arrow_head"
+      },
+      {
+        "key": "arrow_head_kiri",
+        "label": "Arrow Head (Kiri)",
+        "unit": "Sec",
+        "lowerBetter": true,
+        "tiersKey": "arrow_head"
+      },
+      {
+        "key": "sprint_40m",
+        "label": "Sprint 40 Meter",
+        "unit": "Sec",
+        "lowerBetter": true,
+        "tiersKey": "sprint_40m"
+      },
+      {
+        "key": "accel_10m",
+        "label": "Acceleration 10 Meter",
+        "unit": "Sec",
+        "lowerBetter": true,
+        "tiersKey": "sprint_10m"
+      },
+      {
+        "key": "mft_vo2max",
+        "label": "MFT — Aerobik Fitness (VO2Max)",
+        "unit": "cc/kg/bb",
+        "tiersKey": "mft"
+      },
+      {
+        "key": "mft_level",
+        "label": "MFT (Level)",
+        "unit": "level",
+        "descriptive": true,
+        "hidden": true
+      },
+      {
+        "key": "mft_shuttle",
+        "label": "MFT (Shuttle)",
+        "unit": "shuttle",
+        "descriptive": true,
+        "hidden": true
+      }
+    ],
+    "Renang": [
+      {
+        "key": "tinggi_badan",
+        "label": "Tinggi Badan",
+        "unit": "M",
+        "descriptive": true
+      },
+      {
+        "key": "berat_badan",
+        "label": "Berat Badan",
+        "unit": "Kg",
+        "descriptive": true
+      },
+      {
+        "key": "tinggi_duduk",
+        "label": "Tinggi Duduk",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "rentang_lengan",
+        "label": "Panjang Rentang Lengan",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "sit_reach",
+        "label": "Sit and Reach",
+        "unit": "Cm",
+        "tiersKey": "sit_reach"
+      },
+      {
+        "key": "broad_jump",
+        "label": "Standing Broad Jump",
+        "unit": "Cm",
+        "tiersKey": "broad_jump"
+      },
+      {
+        "key": "pull_up",
+        "label": "Pull Up 1 menit (Putra)",
+        "unit": "Kali",
+        "tiersKey": "pull_up"
+      },
+      {
+        "key": "chinning",
+        "label": "Chinning 1 menit (Putri)",
+        "unit": "Kali",
+        "tiersKey": "chinning"
+      },
+      {
+        "key": "core_strength",
+        "label": "Core Muscle Strength",
+        "unit": "Kali",
+        "tiersKey": "core_strength"
+      },
+      {
+        "key": "mft_vo2max",
+        "label": "MFT — Aerobik Fitness (VO2Max)",
+        "unit": "cc/kg/bb",
+        "tiersKey": "mft"
+      },
+      {
+        "key": "mft_level",
+        "label": "MFT (Level)",
+        "unit": "level",
+        "descriptive": true,
+        "hidden": true
+      },
+      {
+        "key": "mft_shuttle",
+        "label": "MFT (Shuttle)",
+        "unit": "shuttle",
+        "descriptive": true,
+        "hidden": true
+      }
+    ],
+    "Pencak Silat": [
+      {
+        "key": "tinggi_badan",
+        "label": "Tinggi Badan",
+        "unit": "M",
+        "descriptive": true
+      },
+      {
+        "key": "berat_badan",
+        "label": "Berat Badan",
+        "unit": "Kg",
+        "descriptive": true
+      },
+      {
+        "key": "tinggi_duduk",
+        "label": "Tinggi Duduk",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "rentang_lengan",
+        "label": "Panjang Rentang Lengan",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "sit_reach",
+        "label": "Sit and Reach",
+        "unit": "Cm",
+        "tiersKey": "sit_reach"
+      },
+      {
+        "key": "med_ball",
+        "label": "Over Head Ball Medicine Throw",
+        "unit": "Cm",
+        "tiersKey": "med_ball"
+      },
+      {
+        "key": "vertical_jump",
+        "label": "Vertical Jump",
+        "unit": "Cm",
+        "tiersKey": "vertical_jump"
+      },
+      {
+        "key": "jump_hop_kanan",
+        "label": "3 Jump HOP (Kanan)",
+        "unit": "Cm",
+        "tiersKey": "jump_hop_3x"
+      },
+      {
+        "key": "jump_hop_kiri",
+        "label": "3 Jump HOP (Kiri)",
+        "unit": "Cm",
+        "tiersKey": "jump_hop_3x"
+      },
+      {
+        "key": "squat_kanan",
+        "label": "Single Leg Squat (Kanan)",
+        "unit": "Kali",
+        "tiersKey": "squat_leg"
+      },
+      {
+        "key": "squat_kiri",
+        "label": "Single Leg Squat (Kiri)",
+        "unit": "Kali",
+        "tiersKey": "squat_leg"
+      },
+      {
+        "key": "pull_up",
+        "label": "Pull Up 1 menit (Putra)",
+        "unit": "Kali",
+        "tiersKey": "pull_up"
+      },
+      {
+        "key": "chinning",
+        "label": "Chinning 1 menit (Putri)",
+        "unit": "Kali",
+        "tiersKey": "chinning"
+      },
+      {
+        "key": "core_strength",
+        "label": "Core Muscle Strength",
+        "unit": "Kali",
+        "tiersKey": "core_strength"
+      },
+      {
+        "key": "hexagonal",
+        "label": "Hexagonal",
+        "unit": "Sec",
+        "lowerBetter": true,
+        "tiersKey": "hexagonal"
+      },
+      {
+        "key": "sprint_10m",
+        "label": "Sprint 10 Meter",
+        "unit": "Sec",
+        "lowerBetter": true,
+        "tiersKey": "sprint_10m"
+      },
+      {
+        "key": "mft_vo2max",
+        "label": "MFT — Aerobik Fitness (VO2Max)",
+        "unit": "cc/kg/bb",
+        "tiersKey": "mft"
+      },
+      {
+        "key": "mft_level",
+        "label": "MFT (Level)",
+        "unit": "level",
+        "descriptive": true,
+        "hidden": true
+      },
+      {
+        "key": "mft_shuttle",
+        "label": "MFT (Shuttle)",
+        "unit": "shuttle",
+        "descriptive": true,
+        "hidden": true
+      }
+    ],
+    "Taekwondo": [
+      {
+        "key": "tinggi_badan",
+        "label": "Tinggi Badan",
+        "unit": "M",
+        "descriptive": true
+      },
+      {
+        "key": "berat_badan",
+        "label": "Berat Badan",
+        "unit": "Kg",
+        "descriptive": true
+      },
+      {
+        "key": "tinggi_duduk",
+        "label": "Tinggi Duduk",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "rentang_lengan",
+        "label": "Panjang Rentang Lengan",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "sit_reach",
+        "label": "Sit and Reach",
+        "unit": "Cm",
+        "tiersKey": "sit_reach"
+      },
+      {
+        "key": "med_ball",
+        "label": "Over Head Ball Medicine Throw",
+        "unit": "Cm",
+        "tiersKey": "med_ball"
+      },
+      {
+        "key": "vertical_jump",
+        "label": "Vertical Jump",
+        "unit": "Cm",
+        "tiersKey": "vertical_jump"
+      },
+      {
+        "key": "jump_hop_kanan",
+        "label": "3 Jump HOP (Kanan)",
+        "unit": "Cm",
+        "tiersKey": "jump_hop_3x"
+      },
+      {
+        "key": "jump_hop_kiri",
+        "label": "3 Jump HOP (Kiri)",
+        "unit": "Cm",
+        "tiersKey": "jump_hop_3x"
+      },
+      {
+        "key": "squat_kanan",
+        "label": "Single Leg Squat (Kanan)",
+        "unit": "Kali",
+        "tiersKey": "squat_leg"
+      },
+      {
+        "key": "squat_kiri",
+        "label": "Single Leg Squat (Kiri)",
+        "unit": "Kali",
+        "tiersKey": "squat_leg"
+      },
+      {
+        "key": "pull_up",
+        "label": "Pull Up 1 menit (Putra)",
+        "unit": "Kali",
+        "tiersKey": "pull_up"
+      },
+      {
+        "key": "chinning",
+        "label": "Chinning 1 menit (Putri)",
+        "unit": "Kali",
+        "tiersKey": "chinning"
+      },
+      {
+        "key": "core_strength",
+        "label": "Core Muscle Strength",
+        "unit": "Kali",
+        "tiersKey": "core_strength"
+      },
+      {
+        "key": "hexagonal",
+        "label": "Hexagonal",
+        "unit": "Sec",
+        "lowerBetter": true,
+        "tiersKey": "hexagonal"
+      },
+      {
+        "key": "sprint_10m",
+        "label": "Sprint 10 Meter",
+        "unit": "Sec",
+        "lowerBetter": true,
+        "tiersKey": "sprint_10m"
+      },
+      {
+        "key": "mft_vo2max",
+        "label": "MFT — Aerobik Fitness (VO2Max)",
+        "unit": "cc/kg/bb",
+        "tiersKey": "mft"
+      },
+      {
+        "key": "mft_level",
+        "label": "MFT (Level)",
+        "unit": "level",
+        "descriptive": true,
+        "hidden": true
+      },
+      {
+        "key": "mft_shuttle",
+        "label": "MFT (Shuttle)",
+        "unit": "shuttle",
+        "descriptive": true,
+        "hidden": true
+      }
+    ],
+    "Panahan": [
+      {
+        "key": "tinggi_badan",
+        "label": "Tinggi Badan",
+        "unit": "M",
+        "descriptive": true
+      },
+      {
+        "key": "berat_badan",
+        "label": "Berat Badan",
+        "unit": "Kg",
+        "descriptive": true
+      },
+      {
+        "key": "rentang_lengan",
+        "label": "Panjang Rentang Lengan",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "sit_reach",
+        "label": "Sit and Reach",
+        "unit": "Cm",
+        "tiersKey": "sit_reach"
+      },
+      {
+        "key": "pull_up",
+        "label": "Pull Up 1 menit (Putra)",
+        "unit": "Kali",
+        "tiersKey": "pull_up"
+      },
+      {
+        "key": "chinning",
+        "label": "Chinning 1 menit (Putri)",
+        "unit": "Kali",
+        "tiersKey": "chinning"
+      },
+      {
+        "key": "core_strength",
+        "label": "Core Muscle Strength",
+        "unit": "Kali",
+        "tiersKey": "core_strength"
+      },
+      {
+        "key": "mft_vo2max",
+        "label": "MFT — Aerobik Fitness (VO2Max)",
+        "unit": "cc/kg/bb",
+        "tiersKey": "mft"
+      },
+      {
+        "key": "mft_level",
+        "label": "MFT (Level)",
+        "unit": "level",
+        "descriptive": true,
+        "hidden": true
+      },
+      {
+        "key": "mft_shuttle",
+        "label": "MFT (Shuttle)",
+        "unit": "shuttle",
+        "descriptive": true,
+        "hidden": true
+      }
+    ],
+    "Bulutangkis": [
+      {
+        "key": "tinggi_badan",
+        "label": "Tinggi Badan",
+        "unit": "M",
+        "descriptive": true
+      },
+      {
+        "key": "berat_badan",
+        "label": "Berat Badan",
+        "unit": "Kg",
+        "descriptive": true
+      },
+      {
+        "key": "tinggi_duduk",
+        "label": "Tinggi Duduk",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "panjang_tungkai",
+        "label": "Panjang Tungkai",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "rentang_lengan",
+        "label": "Panjang Rentang Lengan",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "sit_reach",
+        "label": "Sit and Reach",
+        "unit": "Cm",
+        "tiersKey": "sit_reach"
+      },
+      {
+        "key": "med_ball",
+        "label": "Over Head Ball Medicine Throw",
+        "unit": "Cm",
+        "tiersKey": "med_ball"
+      },
+      {
+        "key": "vertical_jump",
+        "label": "Vertical Jump",
+        "unit": "Cm",
+        "tiersKey": "vertical_jump"
+      },
+      {
+        "key": "squat_kanan",
+        "label": "Single Leg Squat (Kanan)",
+        "unit": "Kali",
+        "tiersKey": "squat_leg"
+      },
+      {
+        "key": "squat_kiri",
+        "label": "Single Leg Squat (Kiri)",
+        "unit": "Kali",
+        "tiersKey": "squat_leg"
+      },
+      {
+        "key": "pull_up",
+        "label": "Pull Up 1 menit (Putra)",
+        "unit": "Kali",
+        "tiersKey": "pull_up"
+      },
+      {
+        "key": "chinning",
+        "label": "Chinning 1 menit (Putri)",
+        "unit": "Kali",
+        "tiersKey": "chinning"
+      },
+      {
+        "key": "core_strength",
+        "label": "Core Muscle Strength",
+        "unit": "Kali",
+        "tiersKey": "core_strength"
+      },
+      {
+        "key": "court_agility",
+        "label": "Court Agility",
+        "unit": "Sec",
+        "lowerBetter": true,
+        "tiersKey": "court_agility"
+      },
+      {
+        "key": "sprint_10m",
+        "label": "Sprint 10 Meter",
+        "unit": "Sec",
+        "lowerBetter": true,
+        "tiersKey": "sprint_10m"
+      },
+      {
+        "key": "mft_vo2max",
+        "label": "MFT — Aerobik Fitness (VO2Max)",
+        "unit": "cc/kg/bb",
+        "tiersKey": "mft"
+      },
+      {
+        "key": "mft_level",
+        "label": "MFT (Level)",
+        "unit": "level",
+        "descriptive": true,
+        "hidden": true
+      },
+      {
+        "key": "mft_shuttle",
+        "label": "MFT (Shuttle)",
+        "unit": "shuttle",
+        "descriptive": true,
+        "hidden": true
+      }
+    ],
+    "Atletik (PA)": [
+      {
+        "key": "tinggi_badan",
+        "label": "Tinggi Badan",
+        "unit": "M",
+        "descriptive": true
+      },
+      {
+        "key": "berat_badan",
+        "label": "Berat Badan",
+        "unit": "Kg",
+        "descriptive": true
+      },
+      {
+        "key": "tinggi_duduk",
+        "label": "Tinggi Duduk",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "panjang_tungkai",
+        "label": "Panjang Tungkai",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "rentang_lengan",
+        "label": "Panjang Rentang Lengan",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "sit_reach",
+        "label": "Sit and Reach",
+        "unit": "Cm",
+        "tiersKey": "sit_reach"
+      },
+      {
+        "key": "broad_jump",
+        "label": "Standing Broad Jump",
+        "unit": "Cm",
+        "tiersKey": "broad_jump"
+      },
+      {
+        "key": "med_ball",
+        "label": "Over Head Ball Medicine Throw",
+        "unit": "Cm",
+        "tiersKey": "med_ball"
+      },
+      {
+        "key": "jump_hop_kanan",
+        "label": "3 Jump HOP (Kanan)",
+        "unit": "Cm",
+        "tiersKey": "jump_hop_3x"
+      },
+      {
+        "key": "jump_hop_kiri",
+        "label": "3 Jump HOP (Kiri)",
+        "unit": "Cm",
+        "tiersKey": "jump_hop_3x"
+      },
+      {
+        "key": "squat_kanan",
+        "label": "Single Leg Squat (Kanan)",
+        "unit": "Kali",
+        "tiersKey": "squat_leg"
+      },
+      {
+        "key": "squat_kiri",
+        "label": "Single Leg Squat (Kiri)",
+        "unit": "Kali",
+        "tiersKey": "squat_leg"
+      },
+      {
+        "key": "pull_up",
+        "label": "Pull Up 1 menit (Putra)",
+        "unit": "Kali",
+        "tiersKey": "pull_up"
+      },
+      {
+        "key": "chinning",
+        "label": "Chinning 1 menit (Putri)",
+        "unit": "Kali",
+        "tiersKey": "chinning"
+      },
+      {
+        "key": "core_strength",
+        "label": "Core Muscle Strength",
+        "unit": "Kali",
+        "tiersKey": "core_strength"
+      },
+      {
+        "key": "sprint_10m",
+        "label": "Sprint 10 Meter",
+        "unit": "Sec",
+        "lowerBetter": true,
+        "tiersKey": "sprint_10m"
+      },
+      {
+        "key": "mft_vo2max",
+        "label": "MFT — Aerobik Fitness (VO2Max)",
+        "unit": "cc/kg/bb",
+        "tiersKey": "mft"
+      },
+      {
+        "key": "mft_level",
+        "label": "MFT (Level)",
+        "unit": "level",
+        "descriptive": true,
+        "hidden": true
+      },
+      {
+        "key": "mft_shuttle",
+        "label": "MFT (Shuttle)",
+        "unit": "shuttle",
+        "descriptive": true,
+        "hidden": true
+      }
+    ],
+    "Atletik (PI)": [
+      {
+        "key": "tinggi_badan",
+        "label": "Tinggi Badan",
+        "unit": "M",
+        "descriptive": true
+      },
+      {
+        "key": "berat_badan",
+        "label": "Berat Badan",
+        "unit": "Kg",
+        "descriptive": true
+      },
+      {
+        "key": "tinggi_duduk",
+        "label": "Tinggi Duduk",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "panjang_tungkai",
+        "label": "Panjang Tungkai",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "rentang_lengan",
+        "label": "Panjang Rentang Lengan",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "sit_reach",
+        "label": "Sit and Reach",
+        "unit": "Cm",
+        "tiersKey": "sit_reach"
+      },
+      {
+        "key": "broad_jump",
+        "label": "Standing Broad Jump",
+        "unit": "Cm",
+        "tiersKey": "broad_jump"
+      },
+      {
+        "key": "med_ball",
+        "label": "Over Head Ball Medicine Throw",
+        "unit": "Cm",
+        "tiersKey": "med_ball"
+      },
+      {
+        "key": "jump_hop_kanan",
+        "label": "3 Jump HOP (Kanan)",
+        "unit": "Cm",
+        "tiersKey": "jump_hop_3x"
+      },
+      {
+        "key": "jump_hop_kiri",
+        "label": "3 Jump HOP (Kiri)",
+        "unit": "Cm",
+        "tiersKey": "jump_hop_3x"
+      },
+      {
+        "key": "squat_kanan",
+        "label": "Single Leg Squat (Kanan)",
+        "unit": "Kali",
+        "tiersKey": "squat_leg"
+      },
+      {
+        "key": "squat_kiri",
+        "label": "Single Leg Squat (Kiri)",
+        "unit": "Kali",
+        "tiersKey": "squat_leg"
+      },
+      {
+        "key": "pull_up",
+        "label": "Pull Up 1 menit (Putra)",
+        "unit": "Kali",
+        "tiersKey": "pull_up"
+      },
+      {
+        "key": "chinning",
+        "label": "Chinning 1 menit (Putri)",
+        "unit": "Kali",
+        "tiersKey": "chinning"
+      },
+      {
+        "key": "core_strength",
+        "label": "Core Muscle Strength",
+        "unit": "Kali",
+        "tiersKey": "core_strength"
+      },
+      {
+        "key": "sprint_10m",
+        "label": "Sprint 10 Meter",
+        "unit": "Sec",
+        "lowerBetter": true,
+        "tiersKey": "sprint_10m"
+      },
+      {
+        "key": "mft_vo2max",
+        "label": "MFT — Aerobik Fitness (VO2Max)",
+        "unit": "cc/kg/bb",
+        "tiersKey": "mft"
+      },
+      {
+        "key": "mft_level",
+        "label": "MFT (Level)",
+        "unit": "level",
+        "descriptive": true,
+        "hidden": true
+      },
+      {
+        "key": "mft_shuttle",
+        "label": "MFT (Shuttle)",
+        "unit": "shuttle",
+        "descriptive": true,
+        "hidden": true
+      }
+    ],
+    "Bola Voli (PA)": [
+      {
+        "key": "tinggi_badan",
+        "label": "Tinggi Badan",
+        "unit": "M",
+        "descriptive": true
+      },
+      {
+        "key": "berat_badan",
+        "label": "Berat Badan",
+        "unit": "Kg",
+        "descriptive": true
+      },
+      {
+        "key": "tinggi_duduk",
+        "label": "Tinggi Duduk",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "panjang_tungkai",
+        "label": "Panjang Tungkai",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "rentang_lengan",
+        "label": "Panjang Rentang Lengan",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "sit_reach",
+        "label": "Sit and Reach",
+        "unit": "Cm",
+        "tiersKey": "sit_reach"
+      },
+      {
+        "key": "vertical_jump",
+        "label": "Vertical Jump",
+        "unit": "Cm",
+        "tiersKey": "vertical_jump"
+      },
+      {
+        "key": "jump_hop_kanan",
+        "label": "3 Jump HOP (Kanan)",
+        "unit": "Cm",
+        "tiersKey": "jump_hop_3x"
+      },
+      {
+        "key": "jump_hop_kiri",
+        "label": "3 Jump HOP (Kiri)",
+        "unit": "Cm",
+        "tiersKey": "jump_hop_3x"
+      },
+      {
+        "key": "squat_kanan",
+        "label": "Single Leg Squat (Kanan)",
+        "unit": "Kali",
+        "tiersKey": "squat_leg"
+      },
+      {
+        "key": "squat_kiri",
+        "label": "Single Leg Squat (Kiri)",
+        "unit": "Kali",
+        "tiersKey": "squat_leg"
+      },
+      {
+        "key": "pull_up",
+        "label": "Pull Up 1 menit (Putra)",
+        "unit": "Kali",
+        "tiersKey": "pull_up"
+      },
+      {
+        "key": "core_strength",
+        "label": "Core Muscle Strength",
+        "unit": "Kali",
+        "tiersKey": "core_strength"
+      },
+      {
+        "key": "semo_agility",
+        "label": "Semo Agility",
+        "unit": "Sec",
+        "lowerBetter": true,
+        "tiersKey": "semo_agility"
+      },
+      {
+        "key": "sprint_10m",
+        "label": "Sprint 10 Meter",
+        "unit": "Sec",
+        "lowerBetter": true,
+        "tiersKey": "sprint_10m"
+      },
+      {
+        "key": "mft_vo2max",
+        "label": "MFT — Aerobik Fitness (VO2Max)",
+        "unit": "cc/kg/bb",
+        "tiersKey": "mft"
+      },
+      {
+        "key": "mft_level",
+        "label": "MFT (Level)",
+        "unit": "level",
+        "descriptive": true,
+        "hidden": true
+      },
+      {
+        "key": "mft_shuttle",
+        "label": "MFT (Shuttle)",
+        "unit": "shuttle",
+        "descriptive": true,
+        "hidden": true
+      }
+    ],
+    "Bola Voli (PI)": [
+      {
+        "key": "tinggi_badan",
+        "label": "Tinggi Badan",
+        "unit": "M",
+        "descriptive": true
+      },
+      {
+        "key": "berat_badan",
+        "label": "Berat Badan",
+        "unit": "Kg",
+        "descriptive": true
+      },
+      {
+        "key": "tinggi_duduk",
+        "label": "Tinggi Duduk",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "panjang_tungkai",
+        "label": "Panjang Tungkai",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "rentang_lengan",
+        "label": "Panjang Rentang Lengan",
+        "unit": "Cm",
+        "descriptive": true
+      },
+      {
+        "key": "sit_reach",
+        "label": "Sit and Reach",
+        "unit": "Cm",
+        "tiersKey": "sit_reach"
+      },
+      {
+        "key": "vertical_jump",
+        "label": "Vertical Jump",
+        "unit": "Cm",
+        "tiersKey": "vertical_jump"
+      },
+      {
+        "key": "jump_hop_kanan",
+        "label": "3 Jump HOP (Kanan)",
+        "unit": "Cm",
+        "tiersKey": "jump_hop_3x"
+      },
+      {
+        "key": "jump_hop_kiri",
+        "label": "3 Jump HOP (Kiri)",
+        "unit": "Cm",
+        "tiersKey": "jump_hop_3x"
+      },
+      {
+        "key": "squat_kanan",
+        "label": "Single Leg Squat (Kanan)",
+        "unit": "Kali",
+        "tiersKey": "squat_leg"
+      },
+      {
+        "key": "squat_kiri",
+        "label": "Single Leg Squat (Kiri)",
+        "unit": "Kali",
+        "tiersKey": "squat_leg"
+      },
+      {
+        "key": "chinning",
+        "label": "Chinning 1 menit (Putri)",
+        "unit": "Kali",
+        "tiersKey": "chinning"
+      },
+      {
+        "key": "core_strength",
+        "label": "Core Muscle Strength",
+        "unit": "Kali",
+        "tiersKey": "core_strength"
+      },
+      {
+        "key": "semo_agility",
+        "label": "Semo Agility",
+        "unit": "Sec",
+        "lowerBetter": true,
+        "tiersKey": "semo_agility"
+      },
+      {
+        "key": "sprint_10m",
+        "label": "Sprint 10 Meter",
+        "unit": "Sec",
+        "lowerBetter": true,
+        "tiersKey": "sprint_10m"
+      },
+      {
+        "key": "mft_vo2max",
+        "label": "MFT — Aerobik Fitness (VO2Max)",
+        "unit": "cc/kg/bb",
+        "tiersKey": "mft"
+      },
+      {
+        "key": "mft_level",
+        "label": "MFT (Level)",
+        "unit": "level",
+        "descriptive": true,
+        "hidden": true
+      },
+      {
+        "key": "mft_shuttle",
+        "label": "MFT (Shuttle)",
+        "unit": "shuttle",
+        "descriptive": true,
+        "hidden": true
+      }
+    ]
+  },
+  "psi_dimensions": [
+    {
+      "key": "motivation",
+      "label": "Motivation",
+      "count": 18,
+      "max": 7
+    },
+    {
+      "key": "confidence",
+      "label": "Confidence",
+      "count": 12,
+      "max": 5
+    },
+    {
+      "key": "mental_toughness",
+      "label": "Mental Toughness",
+      "count": 13,
+      "max": 7
+    }
+  ],
+  "skill_fields": {
+    "Sepak Bola": [
+      "Dribbling",
+      "Passing",
+      "Shooting",
+      "Heading",
+      "Game Sense"
+    ],
+    "Renang": [
+      "Gaya Bebas 50m",
+      "Gaya Dada 50m",
+      "Gaya Punggung 50m",
+      "Daya Tahan",
+      "Teknik"
+    ],
+    "Pencak Silat": [
+      "Jurus Tunggal",
+      "Pukulan",
+      "Tendangan",
+      "Tangkisan",
+      "Stamina"
+    ],
+    "Taekwondo": [
+      "Kyorugi",
+      "Poomsae",
+      "Tendangan Depan",
+      "Tendangan Samping",
+      "Stamina"
+    ],
+    "Panahan": [
+      "Akurasi 10m",
+      "Akurasi 18m",
+      "Konsistensi",
+      "Teknik",
+      "Stamina"
+    ],
+    "Bulutangkis": [
+      "Servis",
+      "Clear",
+      "Drop Shot",
+      "Smash",
+      "Footwork"
+    ],
+    "Atletik (PA)": [
+      "Preparation",
+      "Teknik"
+    ],
+    "Atletik (PI)": [
+      "Keterampilan 1",
+      "Keterampilan 2",
+      "Keterampilan 3"
+    ],
+    "Bola Voli (PA)": [
+      "Servis",
+      "Passing Bawah",
+      "Passing Atas",
+      "Smash",
+      "Block"
+    ],
+    "Bola Voli (PI)": [
+      "Servis",
+      "Passing Bawah",
+      "Passing Atas",
+      "Smash",
+      "Block"
+    ]
+  },
+  "weights": {
+    "Sepak Bola": {
+      "fisik": 0.3333333333333333,
+      "psi": 0.3333333333333333,
+      "skill": 0.3333333333333333
+    },
+    "Renang": {
+      "fisik": 0.3333333333333333,
+      "psi": 0.3333333333333333,
+      "skill": 0.3333333333333333
+    },
+    "Pencak Silat": {
+      "fisik": 0.3333333333333333,
+      "psi": 0.3333333333333333,
+      "skill": 0.3333333333333333
+    },
+    "Taekwondo": {
+      "fisik": 0.3333333333333333,
+      "psi": 0.3333333333333333,
+      "skill": 0.3333333333333333
+    },
+    "Panahan": {
+      "fisik": 0.3333333333333333,
+      "psi": 0.3333333333333333,
+      "skill": 0.3333333333333333
+    },
+    "Bulutangkis": {
+      "fisik": 0.3333333333333333,
+      "psi": 0.3333333333333333,
+      "skill": 0.3333333333333333
+    },
+    "Atletik (PA)": {
+      "fisik": 0.3333333333333333,
+      "psi": 0.3333333333333333,
+      "skill": 0.3333333333333333
+    },
+    "Atletik (PI)": {
+      "fisik": 0.3333333333333333,
+      "psi": 0.3333333333333333,
+      "skill": 0.3333333333333333
+    },
+    "Bola Voli (PA)": {
+      "fisik": 0.3333333333333333,
+      "psi": 0.3333333333333333,
+      "skill": 0.3333333333333333
+    },
+    "Bola Voli (PI)": {
+      "fisik": 0.3333333333333333,
+      "psi": 0.3333333333333333,
+      "skill": 0.3333333333333333
+    }
+  },
+  "athletes": [
+    {
+      "nama": "Galih Ragil P",
+      "cabor": "Atletik (PA)",
+      "jk": "L",
+      "fisik": 60.61,
+      "psi": 87.63,
+      "skill": 75,
+      "posisi": "",
+      "id": 1,
+      "nilai_akhir": 74.4133,
+      "rank_cabor": 1,
+      "rank_global": 1,
+      "psi_details": {
+        "motivation_pct": 77.78,
+        "confidence_pct": 95,
+        "mental_toughness_pct": 90.11
+      },
+      "skill_details": {
+        "Preparation": 70,
+        "Teknik": 80
+      },
+      "physical_details": {
+        "tinggi_badan": 1.65,
+        "berat_badan": 59.7,
+        "tinggi_duduk": 84,
+        "rentang_lengan": 170.47,
+        "panjang_tungkai": 81,
+        "sit_reach": 39,
+        "broad_jump": 229,
+        "med_ball": 574,
+        "jump_hop_kanan": 667,
+        "jump_hop_kiri": 555,
+        "squat_kanan": 30,
+        "squat_kiri": 30,
+        "pull_up": 13,
+        "core_strength": 8,
+        "sprint_10m": 2.059,
+        "mft_vo2max": 46.5
+      }
+    },
+    {
+      "nama": "Noval Fajar",
+      "cabor": "Bola Voli (PA)",
+      "jk": "L",
+      "fisik": 43.79,
+      "psi": 92.72,
+      "skill": 78,
+      "posisi": "Setter",
+      "id": 3,
+      "nilai_akhir": 71.5033,
+      "rank_cabor": 1,
+      "rank_global": 3,
+      "physical_details": {
+        "tinggi_badan": 1.658,
+        "berat_badan": 61.9,
+        "tinggi_duduk": 85.5,
+        "rentang_lengan": 80.3,
+        "sit_reach": 31,
+        "vertical_jump": 56,
+        "jump_hop_kanan": 529,
+        "jump_hop_kiri": 512,
+        "squat_kanan": 1,
+        "squat_kiri": 1,
+        "pull_up": 6,
+        "core_strength": 6,
+        "semo_agility": 12.47,
+        "sprint_10m": 2.026,
+        "mft_vo2max": 36.8
+      },
+      "psi_details": {
+        "motivation_pct": 95.24,
+        "motivation_raw": 120,
+        "confidence_pct": 95,
+        "confidence_raw": 57,
+        "mental_toughness_pct": 87.91,
+        "mental_toughness_raw": 80
+      }
+    },
+    {
+      "nama": "Joko Pinurbo",
+      "cabor": "Bulutangkis",
+      "jk": "L",
+      "fisik": 50.33,
+      "psi": 86,
+      "skill": 85,
+      "posisi": "",
+      "id": 4,
+      "nilai_akhir": 73.7767,
+      "rank_cabor": 1,
+      "rank_global": 2,
+      "physical_details": {
+        "tinggi_badan": 1.697,
+        "berat_badan": 59,
+        "tinggi_duduk": 84.9,
+        "panjang_tungkai": 8.38,
+        "rentang_lengan": 178.3,
+        "sit_reach": 38,
+        "med_ball": 8.4,
+        "vertical_jump": 50,
+        "squat_kanan": 9,
+        "squat_kiri": 7,
+        "pull_up": 3,
+        "core_strength": 8,
+        "court_agility": 10.15,
+        "sprint_10m": 2.044,
+        "mft_vo2max": 50.6
+      }
+    },
+    {
+      "nama": "NH Dhini",
+      "cabor": "Pencak Silat",
+      "jk": "P",
+      "fisik": 0,
+      "psi": 0,
+      "skill": 0,
+      "posisi": "Tanding",
+      "id": 5,
+      "nilai_akhir": 0,
+      "rank_cabor": 1,
+      "rank_global": 5
+    },
+    {
+      "nama": "Sapardi Djoko",
+      "cabor": "Sepak Bola",
+      "jk": "L",
+      "fisik": 0,
+      "psi": 0,
+      "skill": 0,
+      "posisi": "Pemain Depan",
+      "id": 6,
+      "nilai_akhir": 0,
+      "rank_cabor": 1,
+      "rank_global": 6
+    },
+    {
+      "nama": "Leila Chudori",
+      "cabor": "Bulutangkis",
+      "jk": "P",
+      "fisik": 42.33,
+      "psi": 0,
+      "skill": 0,
+      "posisi": "",
+      "id": 7,
+      "nilai_akhir": 14.11,
+      "rank_cabor": 2,
+      "rank_global": 4,
+      "physical_details": {
+        "tinggi_badan": 1.57,
+        "berat_badan": 54.4,
+        "tinggi_duduk": 82,
+        "panjang_tungkai": 75,
+        "rentang_lengan": 159.6,
+        "sit_reach": 38,
+        "med_ball": 510,
+        "vertical_jump": 34,
+        "squat_kanan": 0,
+        "squat_kiri": 0,
+        "chinning": 52,
+        "core_strength": 5,
+        "court_agility": 20.24,
+        "sprint_10m": 2.49,
+        "mft_vo2max": 25.5
+      }
+    }
+  ],
+  "cloud_sync": {
+    "enabled": false,
+    "provider": "jsonbin",
+    "bin_id": "",
+    "api_key": "",
+    "custom_url": "",
+    "custom_auth": "",
+    "poll_interval_sec": 15,
+    "last_synced_at": 0,
+    "last_remote_version": 0,
+    "auto_pull": true,
+    "auto_push": true
+  },
+  "rev": 3,
+  "device_id": "dev-xnvlwz-mp1ynmhb",
+  "_last_local_save": 1778550144986
+}
